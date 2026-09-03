@@ -1,78 +1,19 @@
-<!doctype html><html lang=ko><meta charset=utf-8><title>심리 논문 한 편 preview</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap');
-* { margin:0; padding:0; box-sizing:border-box; }
-.slide {
-  width:1080px; height:1350px; position:relative; overflow:hidden;
-  padding:120px 104px 132px; font-family:'IBM Plex Sans KR', 'Apple SD Gothic Neo', sans-serif;
-  -webkit-font-smoothing:antialiased;
-  word-break:keep-all; line-break:strict; overflow-wrap:break-word;
-  display:flex; flex-direction:column;
-}
-.stack { display:flex; flex-direction:column; width:100%; margin:auto 0; }
-.kicker {
-  font-family:'IBM Plex Sans KR', 'Apple SD Gothic Neo', sans-serif; font-weight:600; font-size:27px;
-  letter-spacing:.14em; margin-bottom:38px;
-}
-.title {
-  font-family:'Gowun Batang', 'Apple SD Gothic Neo', serif; font-weight:700; font-size:82px;
-  line-height:1.3; letter-spacing:-.005em; text-wrap:balance;
-}
-.body {
-  font-family:'IBM Plex Sans KR', 'Apple SD Gothic Neo', sans-serif; font-weight:400; font-size:39px;
-  line-height:1.66; color:inherit; opacity:.9;
-}
-.body.sm { font-size:35px; line-height:1.62; }
-.body.xs { font-size:31px; line-height:1.6; }
-.title + .body, .stype + .title + .body { margin-top:38px; }
-.stack.dim .body { opacity:.72; font-size:36px; }
-.stack.dim .body.sm { font-size:32px; }
-.stype {
-  display:inline-block; align-self:flex-start;
-  font-family:'IBM Plex Sans KR', 'Apple SD Gothic Neo', sans-serif; font-weight:600; font-size:23px;
-  letter-spacing:.06em; color:#C15B3C;
-  border:1.5px solid #C15B3C; border-radius:999px;
-  padding:8px 20px; margin-bottom:30px; opacity:.9;
-}
-.takeaway {
-  font-family:'Gowun Batang', 'Apple SD Gothic Neo', serif; font-weight:700; font-size:52px;
-  line-height:1.5; letter-spacing:-.005em; color:#8A3C24;
-}
-.takeaway.sm { font-size:44px; }
-.handle {
-  font-family:'IBM Plex Sans KR', 'Apple SD Gothic Neo', sans-serif; font-weight:500; font-size:25px;
-  margin-top:54px; opacity:.5; letter-spacing:.02em;
-}
-.stats { display:flex; flex-direction:column; gap:60px; }
-.stat-v { font-family:'Gowun Batang', 'Apple SD Gothic Neo', serif; font-weight:700; font-size:96px;
-  line-height:1; color:#C15B3C; }
-.stat-l { font-size:31px; margin-top:16px; opacity:.68; }
-.chart { display:flex; flex-direction:column; gap:34px; }
-.c-row { display:flex; align-items:center; gap:26px; }
-.c-l { width:230px; font-size:31px; opacity:.72; text-align:right; flex:none; }
-.c-track { flex:1; }
-.c-bar {
-  display:flex; align-items:center; justify-content:flex-end;
-  height:64px; background:#C15B3C; border-radius:12px;
-  padding:0 20px; color:#fff; min-width:64px;
-}
-.c-v { font-size:29px; font-weight:600; font-variant-numeric:tabular-nums; }
-.c-note { font-size:26px; opacity:.55; margin-top:40px; }
-.bar {
-  position:absolute; left:104px; right:104px; bottom:64px;
-  display:flex; align-items:center; gap:18px;
-}
-.trk { flex:1; height:4px; border-radius:3px; overflow:hidden; }
-.fil { height:100%; border-radius:3px; }
-.bar span { font-size:23px; font-weight:500; font-variant-numeric:tabular-nums; }
-
-body{background:#3a352e;display:flex;flex-direction:column;align-items:center;padding:28px;font-family:'IBM Plex Sans KR', 'Apple SD Gothic Neo', sans-serif}
-.wrap{width:1080px;transform-origin:top center}
-.phone{border-radius:26px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4)}
-.strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}
-.strip .slide{scroll-snap-align:start;flex:0 0 1080px}
-.hint{color:#c9c2b5;font-size:22px;margin:20px 0 8px;letter-spacing:.03em}
-@media(max-width:1180px){.wrap{transform:scale(.32)}}
-</style>
-<div class="hint">← 좌우로 넘겨 검수 · 승인: 터미널에서  python3 publish.py 42424684</div>
-<div class="wrap"><div class="phone"><div class="strip"><div class="slide" style="background:#F7F1E6;color:#2A211B"><div class="stack center dim"><div class="kicker" style="color:#C15B3C">심리 논문 한 편</div><div class="stype">Randomized controlled trial</div><div class="title cover-title">미루는 습관,<br>무엇이 바뀌나</div><div class="body">인지행동치료가 미루기를 줄이는 과정</div><div class="handle">@today.psy.paper</div></div></div><div class="slide" style="background:#F7F1E6;color:#2A211B"><div class="stack center"><div class="kicker" style="color:#C15B3C">왜 궁금한가</div><div class="body sm">할 일을 자꾸 미루는 습관은,<br>삶의 만족도를 떨어뜨리곤 합니다.<br>인지행동치료가 도움이 된다지만,<br>누구에게 더 잘 맞는지,<br>무엇이 변화를 이끄는지는 덜 밝혀졌습니다.</div></div><div class="bar"><div class="trk" style="background:rgba(0,0,0,.09)"><div class="fil" style="width:14%;background:#C15B3C"></div></div><span style="color:rgba(0,0,0,.32)">1/7</span></div></div><div class="slide" style="background:#EFE5D3;color:#2A211B"><div class="stack center"><div class="kicker" style="color:#C15B3C">무엇을 했나</div><div class="body sm">학업 미루기를 다룬 두 건의<br>무작위 대조 시험 자료를 모아,<br>참가자 459명을 다시 분석했습니다.<br>치료 전과 중간, 후 세 시점에<br>미루기와 여러 심리 요인을 측정했습니다.</div></div><div class="bar"><div class="trk" style="background:rgba(0,0,0,.09)"><div class="fil" style="width:29%;background:#C15B3C"></div></div><span style="color:rgba(0,0,0,.32)">2/7</span></div></div><div class="slide" style="background:#F7F1E6;color:#2A211B"><div class="stack center"><div class="kicker" style="color:#C15B3C">알게 된 것</div><div class="body sm">감정 조절이 어려웠던 사람일수록<br>치료 효과가 더 컸습니다.<br>우울과 불안, ADHD 증상 여부는<br>효과와 관련이 없어 보였습니다.<br>일의 가치를 다시 느끼고, 미리 대비하는 힘이<br>자랄수록 미루기가 꾸준히 줄었습니다.</div></div><div class="bar"><div class="trk" style="background:rgba(0,0,0,.09)"><div class="fil" style="width:43%;background:#C15B3C"></div></div><span style="color:rgba(0,0,0,.32)">3/7</span></div></div><div class="slide" style="background:#EFE5D3;color:#2A211B"><div class="stack center"><div class="kicker" style="color:#C15B3C">핵심 수치</div><div class="stats"><div class="stat"><div class="stat-v">459명</div><div class="stat-l">분석한 참가자</div></div><div class="stat"><div class="stat-v">2건</div><div class="stat-l">통합한 임상시험</div></div><div class="stat"><div class="stat-v">3회</div><div class="stat-l">측정 시점</div></div></div></div><div class="bar"><div class="trk" style="background:rgba(0,0,0,.09)"><div class="fil" style="width:57%;background:#C15B3C"></div></div><span style="color:rgba(0,0,0,.32)">4/7</span></div></div><div class="slide" style="background:#F7F1E6;color:#2A211B"><div class="stack center"><div class="kicker" style="color:#C15B3C">한계</div><div class="body sm">학생들의 학업 미루기를 다룬<br>자료를 바탕으로 한 분석이라,<br>직장이나 일상의 미루기에<br>그대로 적용하기는 어렵습니다.<br>두 건의 시험을 다시 분석한 결과입니다.</div></div><div class="bar"><div class="trk" style="background:rgba(0,0,0,.09)"><div class="fil" style="width:71%;background:#C15B3C"></div></div><span style="color:rgba(0,0,0,.32)">5/7</span></div></div><div class="slide" style="background:#EFE5D3;color:#2A211B"><div class="stack center"><div class="kicker" style="color:#C15B3C">기억할 한 가지</div><div class="takeaway sm">바뀐 건 의지가 아니라<br>일의 가치를 되찾는 경험이었습니다</div></div><div class="bar"><div class="trk" style="background:rgba(0,0,0,.09)"><div class="fil" style="width:86%;background:#C15B3C"></div></div><span style="color:rgba(0,0,0,.32)">6/7</span></div></div><div class="slide" style="background:#241C17;color:#F7F1E6"><div class="stack center dim"><div class="kicker" style="color:#D98763">출처</div><div class="body sm xs">Pietruch M., Kowalski J., Browarczyk W. 외<br>(2026) Behaviour research and therapy<br>doi:10.1016/j.brat.2026.105106</div><div class="handle">@today.psy.paper</div></div><div class="bar"><div class="trk" style="background:rgba(255,255,255,.14)"><div class="fil" style="width:100%;background:#fff"></div></div><span style="color:rgba(255,255,255,.45)">7/7</span></div></div></div></div></div>
+<!doctype html><html lang=ko><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>미루는 습관, 무엇이 바뀌나 · 검수</title><style>
+*{box-sizing:border-box} body{margin:0;background:#241c17;font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;color:#eee}
+.top,.bot{position:fixed;left:0;right:0;z-index:5;padding:11px 16px;background:rgba(0,0,0,.6);
+  backdrop-filter:blur(6px);font-size:14px;display:flex;justify-content:space-between;gap:10px}
+.top{top:0} .bot{bottom:0;flex-direction:column;gap:6px}
+.gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;height:100vh;align-items:center;
+  -webkit-overflow-scrolling:touch}
+.gal img{scroll-snap-align:center;flex:0 0 100%;width:100%;max-height:88vh;object-fit:contain}
+code{background:#3a2f27;padding:2px 7px;border-radius:5px;color:#e0a58b;user-select:all}
+details{color:#cbbfb4} summary{cursor:pointer}
+</style></head><body>
+<div class="top"><span>미루는 습관, 무엇이 바뀌나</span><span>8장 · 임상심리</span></div>
+<div class="gal"><img src="01.png" alt="슬라이드 1" loading="lazy"><img src="02.png" alt="슬라이드 2" loading="lazy"><img src="03.png" alt="슬라이드 3" loading="lazy"><img src="04.png" alt="슬라이드 4" loading="lazy"><img src="05.png" alt="슬라이드 5" loading="lazy"><img src="06.png" alt="슬라이드 6" loading="lazy"><img src="07.png" alt="슬라이드 7" loading="lazy"><img src="08.png" alt="슬라이드 8" loading="lazy"></div>
+<div class="bot">
+<details><summary>캡션 보기</summary><p style="font-size:13px;line-height:1.6">할 일을 자꾸 미루는 습관은 흔한 자기조절의 어려움으로, 삶의 만족도와 정신건강에 영향을 줍니다. 인지행동치료가 미루기에 가장 유망한 접근으로 여겨지지만, 누구에게 더 잘 맞는지와 어떤 과정을 통해 효과가 나타나는지는 분명하지 않았습니다. 연구진은 학업 미루기를 다룬 두 건의 무작위 대조 시험 자료(참가자 459명)를 하나로 모아, 치료 전과 중간, 후 세 시점의 미루기와 여러 심리 요인을 다시 분석했습니다. 그 결과 치료 시작 시점에 감정 조절이 더 어려웠던 사람일수록 효과가 큰 편이었고, 우울이나 불안, 주의력 결핍 과잉행동장애 증상 여부는 효과를 좌우하지 않았습니다. 또한 일의 가치를 더 높게 느끼고 미리 대비하는 태도가 늘어난 것이 시간이 지나면서 미루기가 줄어드는 것과 관련이 있었습니다. 다만 이 자료는 학생들의 학업 미루기를 대상으로 해, 직장이나 일상의 미루기에 그대로 적용하기는 어렵습니다. 단일 연구이므로 확대 해석은 조심해야 합니다. 출처: Behaviour Research and Therapy (2026).  #임상심리 #인지행동치료 #미루는습관 #자기조절 #정신건강정보</p></details>
+<span>← 좌우로 넘겨 검수 · 승인: <code>python3 publish.py 42424684</code></span>
+</div></body></html>
